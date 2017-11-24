@@ -1,0 +1,48 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: rgb(247,248,249);
+	background-size: cover;
+}
+
+
+#content_bg_main {
+	height: 600px;
+	padding: 50px;
+	list-style: none;
+}
+
+#entry {
+	height: 50px;
+	padding-right: 50px;
+	padding-left: 50px;
+	list-style: none;
+}
+
+#entry_dashboard_acc_details {
+	height: 100px;
+	padding-right: 50px;
+	padding-left: 50px;
+	list-style: none;
+}
+
+#entry_dashboard_transaction {
+	height: 250px;
+	padding-right: 50px;
+	padding-left: 50px;
+	list-style: none;
+}
+
+#entry_dashboard_payees {
+	padding-right: 50px;
+	padding-left: 50px;
+	list-style: none;
+}
+
+#dashboard_menu_a {
+	margin-right: 50px;
+	list-style: none;
+	text-transform: uppercase; 
+	font-weight: bold;
+	font-size: larger;
+}
