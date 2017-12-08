@@ -1,8 +1,8 @@
-# WebApp_MyBanking
-Developed using L(Ubuntu).A.M.P(Python) technologies as a POC.
+  
+#                                         WebApp_MyBanking
 
+                Developed using L(Ubuntu).A.M.P(Python) technologies as a POC.
 
-===========================================================================================
 
 -------------------------------------------ABOUT-------------------------------------------
 
@@ -54,30 +54,32 @@ Developed using L(Ubuntu).A.M.P(Python) technologies as a POC.
     against. However if account no already exists, it will give error.
         
 -------------------------------------------POC------------------------------------------
-    +CGI programming        : index.py, dashboard.py
-    +Classes and Objects    : model_account.py, model_account_manager.py, helperRegEx.py(In rest of the places, I could not make use of these/new classes to make it complete OOP due to my time constraints) These are used in do_register.py & show_dashboard.py.
-    +Regular expressions    : helperRegEx.py, do_login.py, do_register.py
-    +Database programming   : model_account_manager.py and in all do_*.py files.
-    +Logging                : mlog.py > Can configure loggin level level=logging.DEBUG(Most of logs used are ERROR, DEBUG and INFO.)
-    +CSS                    : def_style.css
-    +naming coventions      : Followed as per project description.    
+
+    * CGI programming        : index.py, dashboard.py
+    * Classes and Objects    : model_account.py, model_account_manager.py, helperRegEx.py(In rest of the places, I could not make use of these/new classes to make it complete OOP due to my time constraints) These are used in do_register.py & show_dashboard.py.
+    * Regular expressions    : helperRegEx.py, do_login.py, do_register.py
+    * Database programming   : model_account_manager.py and in all do_*.py files.
+    * Logging                : mlog.py > Can configure loggin level level=logging.DEBUG(Most of logs used are ERROR, DEBUG and INFO.)
+    * CSS                    : def_style.css
+    * naming coventions      : Followed as per project description.    
 
 -------------------------------------------COMMANDS-------------------------------------------
 
     [/etc/apache2] 2s $ sudo systemctl start apache2
     [/etc/apache2] 2s $ sudo systemctl stop apache2
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
     $mysql -u root -p
     password:
     ....
     mysql>create database my_banking;
     mysql>use my_banking;
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     [/var/log/apache2] $ sudo rm -rf ./*
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     [/var/www] $ sudo rm -rf MyBanking
     [/var/www] $ sudo cp -R /home/<user>/Desktop/MyBanking .
